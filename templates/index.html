@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Climate+Crisis&family=Monoton&display=swap" rel="stylesheet">
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+
+<body>
+
+
+    <header class="header">
+ 
+       
+       <div class="header-2">
+          <div class="flex">
+    
+             <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#instructions">Instructions</a>
+                <a href="{{ url_for('category') }}">Calculate</a> 
+                <a href="#suggestions">Suggested-Websites</a> 
+                <a href="#contact">Contact</a> 
+             </nav>
+    
+             
+    
+             
+          </div>
+       </div>
+    
+    </header>
+
+
+    <section class="home">
+
+        <div class="content">
+           <img class="bag" src="static/img/money_bag.png" alt="price">
+           <h3>PRICEWISE</h3>
+           <p><span class="auto-type"></span></p>
+           <a href="#about" class="white-btn">discover more</a>
+           <a href="{{ url_for('category') }}" class="white-btn">Let's Calculate</a>
+        </div>
+     
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+     
+        <script>
+           var typed = new Typed(".auto-type" ,{ 
+              strings:[ "Maximize the resale value of your product"], 
+              typeSpeed: 150,
+              backSpeed: 50,
+              loop: true
+           
+           })
+        </script>
+     
+     </section>
+
+     
+
+     <section class="about">
+        <div class="about-container" id="about">
+           <img class="about-img" src="static/img/about.png" alt="about">
+           <div class="text">
+            <h3>The Resale Value Wizard</h3><br><br>
+            <p>Welcome to the resale value calculation expert PriceWise! Gone are the days of guesswork and outdated listings - emerge into a new era of precision and accuracy.</p><br>
+            <p>It is a a handy tool which will help you know the true potential of your used goods. Our algorithm considers various factors and trends to bring you your resale value estimation. It doesn't matter if you have a 3-year old laptop or 5-year old car - we've got you covered! </p>
+           </div>
+          </div>
+     </section>
+
+
+
+
+
+
+<section class="instructions" id="instructions">
+  <h1 class="center">How it <br>works</h1>
+  <div class="instructions-container">
+   <div class="card-1">
+    <div class="content">
+      <h2>01</h2>
+        <img src="static/img/img1.jpg" alt="select">
+      <h3>Select</h3>
+      <p>Choose your product type from a list of categories – cars, laptops, and mobile phones.</p>
+    </div>
+   </div>
+
+   <div class="card-2">
+    <div class="content">
+        <img src="static/img/img2.jpg" alt="select">
+        <h2>02</h2>
+        <h3>Add</h3>
+        <p>Input product details such as owner type, company name, model type, and mileage.</p>
+    </div>
+   </div>
+   
+   <div class="card-3">
+    <div class="content">
+        <img src="static/img/img3.jpg" alt="select">
+        <h2>03</h2>
+        <h3>Predict</h3>
+        <p>Hit the 'Predict' button and watch PriceWise work its magic!</p>
+    </div>
+   </div>
+  </div>
+  
+
+
+
+</section>
+
+
+<section class="ready" id="ready">
+  <div class="ready-container">
+    <div class="slides">
+
+        <img class="arrow" src="static/img/arrow.png" height="30%" width="30%">
+        <h1>Ready to unveil your product's true potential?</h1>
+        <a href="{{ url_for('category') }}" class="white-btn">Start Calculating</a>
+        <a href="#instructions" class="white-btn">Instructions</a>
+    </div>
+</div>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="suggestions" id="suggestions">
+<h3>Suggested Websites</h3>
+  <div class="container1">
+    <div class="box">
+      <a href="https://www.olxautos.in/olxautos?utm_campaign_id=17560405086&utm_adgroup_id=136774791534&utm_source=google&utm_medium=cpc&utm_campaign=IN|H-R|C2B|PM|GP|PROS|WEB|tROAS|Booking|NA|NA|DefaultTab|00000000&utm_term=&utm_content=&campaign_id=18137801231&group_id=&target_id=&ad_id=&matchtype=&network=x&device=c&country=IN&territory=H-R&group=&campaign_type=PM&gad=1&gclid=Cj0KCQjwkqSlBhDaARIsAFJANkgBzcn51yu3sbajxv-KZmG4DoT5j8utHQMVgNkIYGdZnSqynfBWo_waAi1CEALw_wcB">
+        <img src="static/img/olx.jpg" alt="Logo 1">
+      </a>
+    </div>
+    <div class="box">
+      <a href="https://www.spinny.com/sell-used-car/?utm_source=rdmpl&utm_medium=affiliate&utm_campaign=SPB_0301&utm_term=emailer&utm_content=SPB_0301_6VC">
+        <img src="static/img/snippy.png" alt="Logo 2">
+      </a>
+    </div>
+    <div class="box">
+      <a href="https://www.cardekho.com/sell-used-car">
+        <img src="static/img/cardekho.jpg" alt="Logo 3">
+      </a>
+    </div>
+    <div class="box">
+      <a href="#">
+        <img src="static/img/cashify.png" alt="Logo 4">
+      </a>
+    </div>
+   
+  </div>
+  <div class="container1">
+    <div class="box">
+      <a href="https://cashkar.in/sell-old-laptops">
+        <img src="static/img/cashKar.jpeg" alt="Logo 5">
+      </a>
+    </div>
+    <div class="box">
+      <a href="https://budli.in/sell-used-laptops">
+        <img src="static/img/budli.avif" alt="Logo 6">
+      </a>
+    </div>
+    <div class="box">
+      <a href="https://www.buybackart.com/?gad=1&gclid=Cj0KCQjwkqSlBhDaARIsAFJANkhWXtSkvcwTmqO3VGBvJQ9KAmx6XN5fSTPjr9pP5SkbcfTD_7VnMHUaAr-hEALw_wcB#/">
+        <img src="static/img/BuyBackCart.png" alt="Logo 7">
+      </a>
+    </div>
+    <div class="box">
+        <a href="https://www.decluttr.com/?source=aw&utm_source=713679&utm_medium=awin&utm_campaign=Dotdash&awc=8053_1688836962_8e48e736db9f8667e3693008f57222b8">
+          <img src="static/img/decluttr.png" alt="Logo 8">
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="contact" id="contact">
+   <div class="content">
+      <div class="text"></div>
+      <h3>Have any questions?</h3>
+      <p>At Bookly, we are committed to providing exceptional customer service. If you have any questions, concerns, or feedback regarding our products or services, please do not hesitate to contact us.</p>
+      <a href="{{ url_for('contact') }}" class="white-btn">contact us</a>
+      </div>
+
+   </div>
+</section>
+    
+     
+     
+     
+     
+
+
+     
+</body>
+</html>

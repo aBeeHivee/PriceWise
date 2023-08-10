@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+  <div class="aesthetic-background">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>PriceWise</title>
+  <link href="static/css/category_style.css" rel="stylesheet" type="text/css" />
+  
+</head>
+  
+<body>
+    <h1 class="center">Categories</h1>
+    <h2 class="center typewriter">Choose the appropriate category for your product.</h2>
+  <div class="container">
+   <div class="card-1">
+    <div class="content">
+        <img src="static/img/c1.png" alt="select" >
+      <p>Cars</p>
+      <a href="{{ url_for('carf') }}">Click Here</a>
+    </div>
+   </div>
+
+   <div class="card-2">
+    <div class="content">
+        <img src="static/img/c2.png" alt="select" class="animated-image">
+        <p>Laptops</p>
+      <a href="{{ url_for('lapf') }}">Click Here</a>
+    </div>
+   </div>
+    
+   <div class="card-3">
+    <div class="content">
+        <img src="static/img/c3.png" alt="select" class="animated-image">
+        <p>Mobile Phones</p>
+      <a href="{{ url_for('phone') }}">Click Here</a>
+    </div>
+   </div>
+</body>
+
+  <script type="text/javascript" src="static/vanilla-tilt.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelector(".card-1"), {
+		max: 25,
+		speed: 400,
+      glare: true,
+      "max-glare": 1  
+	});
+  </script>
+  
+  <script>
+    VanillaTilt.init(document.querySelector(".card-2"), {
+		max: 25,
+		speed: 400,
+      glare: true,
+      "max-glare": 1  
+	});
+  </script>
+    
+  <script>
+    VanillaTilt.init(document.querySelector(".card-3"), {
+		max: 25,
+		speed: 400,
+      glare: true,
+      "max-glare": 1  
+	});
+  </script>
+  </div>
+</html>
